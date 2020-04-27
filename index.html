@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de repositórios do Github</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <h1>Buscador de repositórios do Github</h1>
+    <div class="search-user">
+      <input type="text" name="user" placeholder="Digite o nome do usuário do Github">
+      <button onclick="nameUser()">Buscar</button>
+    </div>
+    <h2 id="title" class="data-user hide">
+      <img id="avatar" class="avatar" src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="user avatar">
+      <div class="user-info">
+        <div id="name" class="user">Nome</div>
+        <div id="user" class="subtitle">Usuário<div/>
+      </div>
+    </h2>
+    <ul class="list-repo"></ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
